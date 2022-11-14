@@ -20,3 +20,4 @@ whitenoise==5.3.0
 WTForms==2.3.3
 xgboost==1.4.2
 django-heroku
+#requirements.txt這個文字檔，就是告訴Heroku，此專案在伺服上要安裝那些套件
