@@ -16,8 +16,10 @@
 <link type="text/css" rel="stylesheet" href="{% static 'css/oct.css'%}"> 
 </head>
 <body>
+<!-- 照片和歡迎觀光 -->
 <div class='container-fluid'>
 {% include 'header.html' %}
+<!-- MENU側邊欄 -->
 <div class='row'>
 <div class="col-sm-4 col-md-4">
 <div class='panel panel-default'>
@@ -31,6 +33,7 @@
 <a href='https://www.youtube.com/watch?v=qNiEgIx43wk' class='list-group-item'>TVBS新聞台</a>
 <a href='https://www.youtube.com/watch?v=_S6n7WJR5dU' class='list-group-item'>Focus全球新聞</a>
 </div>
+<!-- JavaScript -->
 <script type="text/javascript"
 src="http://feedjit.com/serve/?vv=1515&amp;tft=3&amp;dd=0&amp;wid=&amp;p
 id=0&amp;proid=0&amp;bc=FFFFFF&amp;tc=000000&amp;brd1=012B6B&amp;lnk=135
@@ -40,14 +43,17 @@ Stats</a></noscript>
 </div>
 </div>
 </div>
+<!-- 這個區塊跟index.html裡面的{% block headmessage %} {% endblock %}是一樣的 -->
 <div class='col-sm-8 col-md-8'>
 <div class='panel panel-default'>
 <div class='panel-heading'>
 {% block headmessage %} {% endblock %}
 </div>
+<!-- 中間的內容跟index.html裡面的{% block content %} {% endblock %}是一樣的 -->
 <div class='panel-body'>
 {% block content %} {% endblock %}
 </div>
+<!-- 腳註 -->
 <div class='panel-footer'>
 {% include 'footer.html' %}
 </div>

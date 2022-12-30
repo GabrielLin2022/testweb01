@@ -23,3 +23,4 @@ urlpatterns = [
     path('', homepage),
     path('post/<slug:slug>/', showpost)
 ]
+# path('', homepage),直接給它空的' ', 就不用在網址後面打字，它會自動跳出畫面

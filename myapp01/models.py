@@ -11,7 +11,7 @@ class Post(models.Model):
     class Mata:
         # 默認情況下，"QuerySet""返回的結果是根據模型 ''Meta''中的"ordering"選項給出的排序元組排序
         ordering = ('-pub_date',)#回傳必須是字串
-        def __str__(self):
+        def __str__(self):  # __str__(self):它跟__init__很像會自動回傳參數，但它回傳必須是字串，在C#，Java:叫ToString
             return self.title  
 
 #默認情況下，QuerySet 根據模型 Mata 類的 ordering 選項排序。要使用特定的排序方法時可以用order_by()

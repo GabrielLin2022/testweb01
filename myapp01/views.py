@@ -21,7 +21,7 @@ from datetime import datetime
 #     return render(request, 'index.html', locals())
 
 
-
+#====================================================================只把資料庫的號碼、名稱及內容顯示出來
 
 # def homepage(request):
 #     posts = Post.objects.all()
@@ -29,8 +29,9 @@ from datetime import datetime
 #     for count, post in enumerate(posts):
 #         post_lists.append("No.{}:".format(str(count+1)) +str(post)+"<br>")
 #         post_lists.append("<small>" + str(post.body)+ "</small></br></br>")
-#     return HttpResponse(post_lists)
+#     return HttpResponse(post_lists)#HttpResponse:我們在views.py 裡寫html的語法，借由它直接推到網頁上顯示出來
 
+#========================================================================================
 def homepage(request):
     template = get_template('index.html')
     posts = Post.objects.all()
